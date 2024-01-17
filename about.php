@@ -11,16 +11,10 @@
 <link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
 </head>
 <body>
-
 <div class="super_container">
-
 	<!-- Header -->
-	<?php include'blueinclude/Header.php';?>
-	
-	
-	
+	<?php include'blueinclude/Header.php';?>	
 	<!-- Home -->
-
 	<div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
 		<div class="home_container">
@@ -41,16 +35,11 @@
 			</div>
 		</div>
 	</div>
-
-	
         <?php include'blueinclude/searchbar.php';?>
-
 	<!-- About -->
-
 	<div class="about">
 		<div class="container">
 			<div class="row">
-
 				<!-- About Content -->
 				<div class="col-lg-6">
 					<div class="about_content">
@@ -61,14 +50,12 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- About Image -->
 				<div class="col-lg-6">
 					<div class="about_image"><img src="images/about_image.jpg" alt=""></div>
 				</div>
 			</div>
 			<div class="row milestones_row">
-
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -79,7 +66,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -90,7 +76,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -99,10 +84,8 @@
 							<div class="milestone_counter" data-end-value="124">0</div>
 							<div class="milestone_text">Buildings Sold</div>
 						</div>
-						
 					</div>
 				</div>
-
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -113,13 +96,10 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
 	<!-- Realtors -->
-
 	<div class="realtors">
 		<div class="container">
 			<div class="row">
@@ -128,8 +108,7 @@
 					<div class="section_subtitle">Search your dream home</div>
 				</div>
 			</div>
-			<div class="row realtors_row">
-				
+			<div class="row realtors_row">				
 				<!-- Realtor -->
 				<div class="col-lg-3 col-md-6">
 					<div class="realtor_outer">
@@ -146,7 +125,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Realtor -->
 				<div class="col-lg-3 col-md-6">
 					<div class="realtor_outer">
@@ -163,7 +141,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Realtor -->
 				<div class="col-lg-3 col-md-6">
 					<div class="realtor_outer">
@@ -180,7 +157,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Realtor -->
 				<div class="col-lg-3 col-md-6">
 					<div class="realtor_outer">
@@ -197,13 +173,10 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -225,12 +198,9 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
     <?php include 'blueinclude/Footer.php' ?>
-
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
