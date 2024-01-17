@@ -13,16 +13,11 @@
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 </head>
 <body>
-
 <div class="super_container">
-
 	<!-- Header -->
-
 	<?php include_once('blueinclude/Header.php') ?>
     <?php include'sendmsg.php';?>
-	
 	<!-- Home -->
-
 	<div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
 		<div class="home_container">
@@ -43,14 +38,11 @@
 			</div>
 		</div>
 	</div>
-
 <?php include'blueinclude/searchbar.php';?>
 <!-- Contact -->
-
 	<div class="contact">
 		<div class="container">
 			<div class="row">
-
 				<!-- Contact Info -->
 				<div class="col-lg-4">
 					<div class="contact_info">
@@ -77,7 +69,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Contact Form -->
 				<div class="col-lg-8">
 					<div class="contact_form_container">
@@ -101,9 +92,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Map -->
-
 	<div class="contact_map">
 		<!-- Google Map -->
 		<div class="map">
@@ -114,9 +103,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -138,12 +125,9 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
-
 	<?php include'blueinclude/Footer.php';?>
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
