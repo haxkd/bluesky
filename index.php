@@ -4,7 +4,6 @@ include 'blueinclude/conn.php';
         if(isset($_SESSION['email'])){
         $session_email=$_SESSION['email'];}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,22 +17,14 @@ include 'blueinclude/conn.php';
 <?php include_once('blueinclude/style.php') ?>
 </head>
 <body>
-
 <div class="super_container ">
-
 	<!-- Header -->
-
    <?php include'blueinclude/Header.php';?>
-   
-   
 	<!-- Home -->
-
 	<div class="home">
-
 		<!-- Home Slider -->
 		<div class="home_slider_container">
 			<div class="owl-carousel owl-theme home_slider">
-				
 				<!-- Slide -->
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
@@ -67,22 +58,13 @@ include 'blueinclude/conn.php';
 						</div>
 					</div>
 				</div>
-
 				<!-- Slide -->
-				
-
 				<!-- Slide -->
-				
-
 			</div>
 		</div>
 	</div>
-
      <?php include'blueinclude/searchbar.php';?>
-	
-	
         <!-- Recent -->
-
 	<div class="recent">
 		<div class="container">
 			<div class="row">
@@ -102,10 +84,7 @@ include 'blueinclude/conn.php';
                    if ($result->num_rows > 0) {
                   // output data of each row
                   while($row = $result->fetch_assoc()) {
-                         ?>
-                         
-			
-							
+                         ?>				
 							<!-- Slide -->
 							<div class="owl-item">
 								<div class="recent_item">
@@ -127,16 +106,8 @@ include 'blueinclude/conn.php';
 									</div>
 								</div>
 							</div>
-       
                                                           <?php } } ?>
-       
-       
-							
-
-							
-
 						</div>
-
 						<div class="recent_slider_nav_container d-flex flex-row align-items-start justify-content-start">
 							<div class="recent_slider_nav recent_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
 							<div class="recent_slider_nav recent_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
@@ -147,9 +118,7 @@ include 'blueinclude/conn.php';
 			</div>
 		</div>
 	</div>
-
 	<!-- Cities -->
-
 	<div class="cities">
 		<div class="container">
 			<div class="row">
@@ -158,10 +127,8 @@ include 'blueinclude/conn.php';
 					<div class="section_subtitle">Search your dream home</div>
 				</div>
 			</div>
-		</div>
-		
+		</div>		
 		<div class="cities_container d-flex flex-row flex-wrap align-items-start justify-content-between">
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_1.jpg" alt="https://unsplash.com/@dnevozhai">
@@ -172,7 +139,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_2.jpg" alt="https://unsplash.com/@lachlanjdempsey">
@@ -183,7 +149,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_3.jpg" alt="https://unsplash.com/@hellolightbulb">
@@ -194,7 +159,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_4.jpg" alt="https://unsplash.com/@justinbissonbeck">
@@ -205,7 +169,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_5.jpg" alt="https://unsplash.com/@claudiotrigueros">
@@ -216,7 +179,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_6.jpg" alt="https://unsplash.com/@andersjilden">
@@ -227,7 +189,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_7.jpg" alt="https://unsplash.com/@sawyerbengtson">
@@ -238,7 +199,6 @@ include 'blueinclude/conn.php';
 					</a>	
 				</div>
 			</div>
-
 			<!-- City -->
 			<div class="city">
 				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
@@ -251,9 +211,7 @@ include 'blueinclude/conn.php';
 			</div>
 		</div>
 	</div>
-
 	<!-- Testimonials -->
-
 	<div class="testimonials">
 		<div class="container">
 			<div class="row">
@@ -262,8 +220,7 @@ include 'blueinclude/conn.php';
 					<div class="section_subtitle">Search your dream home</div>
 				</div>
 			</div>
-			<div class="row testimonials_row">
-				
+			<div class="row testimonials_row">				
 				<!-- Testimonial Item -->
 				<div class="col-lg-4 testimonial_col">
 					<div class="testimonial">
@@ -274,7 +231,6 @@ include 'blueinclude/conn.php';
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
-
 				<!-- Testimonial Item -->
 				<div class="col-lg-4 testimonial_col">
 					<div class="testimonial">
@@ -285,7 +241,6 @@ include 'blueinclude/conn.php';
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
-
 				<!-- Testimonial Item -->
 				<div class="col-lg-4 testimonial_col">
 					<div class="testimonial">
@@ -296,13 +251,10 @@ include 'blueinclude/conn.php';
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -324,12 +276,9 @@ include 'blueinclude/conn.php';
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
-
    <?php require_once('blueinclude/Footer.php') ?>
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
