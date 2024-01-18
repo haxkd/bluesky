@@ -9,11 +9,9 @@
          $user = $_POST['email'];
          $password = $_POST['password'];
         // $sql_query="SELECT * FROM `users` WHERE `user_type`='".$_POST['user_type']."' ";
-        
          $sql_query="SELECT * FROM `user_tb` WHERE `email`='".$user."'";
          $result=mysqli_query($conn,$sql_query);
          $numrow = mysqli_num_rows($result);
-	
 	if($numrow!=0)
 	{
 		while($row = mysqli_fetch_assoc($result))
@@ -40,8 +38,4 @@
                  }else{
                  header("location: login.php?Invalid=Invalid Input ....Please Fill in Correct User details");
                  } 
-        
-        
-        
-
 ?>
