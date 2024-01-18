@@ -4,7 +4,6 @@ if(isset($_SESSION['email'])){
            header('Location: profile.php');
       }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,8 +22,6 @@ if(isset($_SESSION['email'])){
 </head>
 <body>
     <?php require_once('blueinclude/Header.php'); ?>
-    
-        
         <br />
         <br />
         <br />
@@ -34,7 +31,6 @@ if(isset($_SESSION['email'])){
         <div class="container">
             <div class="col-sm-12">
                 <center><h2>Login</h2></center>
-
             </div>
             <div class="container">
                 <div class="row">
@@ -62,7 +58,6 @@ if(isset($_SESSION['email'])){
                       }    
                     ?>
                 <form class="form-horizontal" role="form" method="post" action="login_process.php">
-                        
                             <div class="form-group">
                                 <label for="email" class=" control-label">Email </label>
                                 <div class="">
@@ -75,14 +70,12 @@ if(isset($_SESSION['email'])){
                                     <input ID="password" name="password"  type="password" placeholder="Password" class="form-control">
                                 </div>
                             </div>
-
                             <!-- /.form-group -->
                             <div class="form-group">
                                 
                             <button ID="login" runat="server" class="btn btn-primary col-sm-4 " name="log_in" >login</button>
                             </div>
                         </form>
-
                         <!-- /form -->
                     </div>
                     <div class="col-sm-3"></div>
@@ -92,10 +85,8 @@ if(isset($_SESSION['email'])){
         <!-- ./container -->
         <br />
         <br />
-        <div>
-    
+        <div>    
     <?php require_once('blueinclude/Footer.php') ?>
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
     <script src="styles/bootstrap4/bootstrap.min.js"></script>
