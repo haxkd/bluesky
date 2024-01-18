@@ -1,8 +1,3 @@
-﻿
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +12,10 @@
     <link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
 </head>
 <body>
-
     <div class="super_container">
-
         <!-- Header -->
         <?php include_once('blueinclude/Header.php') ?>
-
-
-
-        
         <!-- Home -->
-
         <div class="home">
             <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/elements.jpg" data-speed="0.8"></div>
             <div class="home_container">
@@ -47,18 +35,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        
+        </div>        
         <?php include'blueinclude/searchbar.php';?>
-
         <!-- Elements -->
-
         <div class="elements">
             <div class="container">
                 <div class="row">
                     <div class="col">
-
                         <!-- Buttons -->
                         <div class="buttons">
                             <div class="elements_title">Buttons</div>
@@ -70,16 +53,13 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Accordions & Tabs -->
-
                         <div class="elements_accordions_tabs">
                             <div class="elements_title">Accordions & Tabs</div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="elements_accordions">
                                         <div class="accordions">
-
                                             <div class="accordion_container">
                                                 <div class="accordion d-flex flex-row align-items-center">
                                                     <div>Sed at massa maximus, tempus elit nec, feugiat enim. </div>
@@ -90,7 +70,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="accordion_container">
                                                 <div class="accordion d-flex flex-row align-items-center">
                                                     <div>Massa maximus, tempus elit nec, feugiat enim. </div>
@@ -101,7 +80,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="accordion_container">
                                                 <div class="accordion d-flex flex-row align-items-center active">
                                                     <div>Etiam ultricies purus ac neque interdum</div>
@@ -112,7 +90,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -152,13 +129,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Milestones -->
-
                         <div class="milestones">
                             <div class="elements_title">Milestones</div>
                             <div class="row milestones_row">
-
                                 <!-- Milestone -->
                                 <div class="col-lg-3 milestone_col">
                                     <div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -170,7 +144,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Milestone -->
                                 <div class="col-lg-3 milestone_col">
                                     <div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -182,7 +155,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Milestone -->
                                 <div class="col-lg-3 milestone_col">
                                     <div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -192,10 +164,8 @@
                                             <div class="milestone_counter" data-end-value="124">0</div>
                                             <div class="milestone_text">Buildings Sold</div>
                                         </div>
-
                                     </div>
                                 </div>
-
                                 <!-- Milestone -->
                                 <div class="col-lg-3 milestone_col">
                                     <div class="milestone d-flex flex-row align-items-center justify-content-start">
@@ -207,12 +177,9 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                         <!-- Loaders -->
-
                         <div class="loaders">
                             <div class="elements_title">Loaders</div>
                             <div class="loaders_container">
@@ -246,13 +213,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Icon Boxes -->
-
                         <div class="icon_boxes">
                             <div class="elements_title">Icon Boxes</div>
                             <div class="row icon_boxes_row">
-
                                 <!-- Icon Box -->
                                 <div class="col-lg-4 icon_box_col">
                                     <div class="icon_box">
@@ -266,7 +230,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Icon Box -->
                                 <div class="col-lg-4 icon_box_col">
                                     <div class="icon_box">
@@ -280,7 +243,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Icon Box -->
                                 <div class="col-lg-4 icon_box_col">
                                     <div class="icon_box">
@@ -294,16 +256,13 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Newsletter -->
-
         <div class="newsletter">
             <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
             <div class="container">
@@ -325,11 +284,9 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer -->
         <?php include_once('blueinclude/Footer.php') ?>
     </div>
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="styles/bootstrap4/popper.js"></script>
     <script src="styles/bootstrap4/bootstrap.min.js"></script>
