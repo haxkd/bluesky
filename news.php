@@ -1,7 +1,3 @@
-﻿
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +13,10 @@
 <link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 </head>
 <body>
-
 <div class="super_container">
-
 	<!-- Header -->
     <?php require_once('blueinclude/Header.php') ?>
-
-	
-
-	
 	<!-- Home -->
-
 	<div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/news.jpg" data-speed="0.8"></div>
 		<div class="home_container">
@@ -48,14 +37,11 @@
 			</div>
 		</div>
 	</div>
-
 <?php require_once('blueinclude/searchbar.php') ?>
 	<!-- News -->
-
 	<div class="news">
 		<div class="container">
 			<div class="row">
-
 				<!-- News Posts -->
 				<div class="col-lg-8">
 					<div class="news_posts">
@@ -83,7 +69,6 @@
 								<p>Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.Sed lectus urna, ultricies sit amet risus eget, euismod imperdiet augue. Duis imperdiet, purus a pellentesque sodales, sapien mauris rhoncus eros, ac blandit elit leo ac diam.</p>
 							</div>
 						</div>
-
 						<!-- News Post -->
 						<div class="news_post">
 							<div class="news_post_title_container d-flex flex-row align-items-center justify-content-start">
@@ -107,7 +92,6 @@
 								<p>Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.Sed lectus urna, ultricies sit amet risus eget, euismod imperdiet augue. Duis imperdiet, purus a pellentesque sodales, sapien mauris rhoncus eros, ac blandit elit leo ac diam.</p>
 							</div>
 						</div>
-
 						<!-- News Post -->
 						<div class="news_post">
 							<div class="news_post_title_container d-flex flex-row align-items-center justify-content-start">
@@ -131,9 +115,7 @@
 								<p>Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.Sed lectus urna, ultricies sit amet risus eget, euismod imperdiet augue. Duis imperdiet, purus a pellentesque sodales, sapien mauris rhoncus eros, ac blandit elit leo ac diam.</p>
 							</div>
 						</div>
-
 					</div>
-
 					<!-- Pagination -->
 					<div class="pagination">
 						<ul>
@@ -144,11 +126,9 @@
 						</ul>
 					</div>
 				</div>
-
 				<!-- Sidebar -->
 				<div class="col-lg-4">
 					<div class="sidebar">
-
 						<!-- Search -->
 						<div class="sidebar_top_search">
 							<form action="#" class="sidebar_top_search_form">
@@ -156,7 +136,6 @@
 								<button class="sidebar_top_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</form>
 						</div>
-
 						<!-- Categories -->
 						<div class="categories">
 							<div class="sidebar_title">Categories</div>
@@ -185,12 +164,10 @@
 								</ul>
 							</div>
 						</div>
-
 						<!-- Latest Posts -->
 						<div class="sidebar_latest">
 							<div class="sidebar_title">Latest Posts</div>
 							<div class="sidebar_latest_posts">
-
 								<!-- Recent Post -->
 								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
 									<div><div class="latest_post_image"><img src="images/latest_1.jpg" alt=""></div></div>
@@ -200,7 +177,6 @@
 										<div class="latest_post_author">By <a href="#">William Smith</a></div>
 									</div>
 								</div>
-
 								<!-- Recent Post -->
 								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
 									<div><div class="latest_post_image"><img src="images/latest_2.jpg" alt=""></div></div>
@@ -210,7 +186,6 @@
 										<div class="latest_post_author">By <a href="#">William Smith</a></div>
 									</div>
 								</div>
-
 								<!-- Recent Post -->
 								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
 									<div><div class="latest_post_image"><img src="images/latest_3.jpg" alt=""></div></div>
@@ -220,7 +195,6 @@
 										<div class="latest_post_author">By <a href="#">William Smith</a></div>
 									</div>
 								</div>
-
 								<!-- Recent Post -->
 								<div class="latest_post d-flex flex-row align-items-start justify-content-start">
 									<div><div class="latest_post_image"><img src="images/latest_4.jpg" alt=""></div></div>
@@ -230,10 +204,8 @@
 										<div class="latest_post_author">By <a href="#">William Smith</a></div>
 									</div>
 								</div>
-
 							</div>
 						</div>
-
 						<!-- Sidebar Search -->
 						<div class="sidebar_search">
 							<div class="sidebar_search_title">Search your home</div>
@@ -282,7 +254,6 @@
 											<input type="text" class="sidebar_search_input" placeholder="Bathrooms No">
 										</div>
 									</div>
-
 									<!-- Filter Price -->
 									<div class="price_filter">
 										<div class="price_filter_values d-flex flex-row align-items-center justfy-content-start">
@@ -291,7 +262,6 @@
 										</div>
 										<input type="range" min="0" max="1000" step="10" value="250" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
 									</div>
-
 									<!-- Filter Area -->
 									<div class="area_filter">
 										<div class="price_filter_values d-flex flex-row align-items-center justfy-content-start">
@@ -309,9 +279,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -333,12 +301,9 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
-
     <?php include_once('blueinclude/Footer.php') ?>
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
