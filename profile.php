@@ -1,21 +1,16 @@
 <?php
 session_start();
  include 'blueinclude/conn.php';
- 
         if(isset($_SESSION['email'])){
         $session_email=$_SESSION['email'];
          $sql = "SELECT * FROM `user_tb` WHERE `email`='".$session_email."'";
-                        $result = $conn->query($sql);
-                        
-
+                        $result = $conn->query($sql);                      
                         if ($result->num_rows > 0) {
                           // output data of each row
                         $row = mysqli_fetch_assoc($result);}
                         }else{
                 header("location:login.php?Invalid=Please Login First....");
-        
         }
-
     if(isset($_POST['type_submit'])){
         $user_id1=$_POST['user_id'];
         $type1=$_POST['user_type'];
@@ -23,11 +18,9 @@ session_start();
         $type_sql="INSERT INTO `request_seller` (`user_id`, `type`, `about_exp`) VALUES ('$user_id1', '$type1', '$aboutexp')";
         if ($conn->query($type_sql) === TRUE) {
             $request="Request successfully submitted";
-            
         }else{
            $request="You allredy Requested";  
         }
-        
     }
 ?>
 <?php include_once('UpdateProfile.php') ?>
@@ -39,9 +32,6 @@ session_start();
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Bluesky template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 <!------ Include the above in your HEAD tag ---------->
 <?php include_once('blueinclude/style.php') ?>
 <link rel="stylesheet" type="text/css" href="styles/profile.css">
@@ -49,20 +39,16 @@ session_start();
 mark {
   background-color: #DAEF3E;
   color: black;
-}
- 
-        
+}       
         /* Text alignment for body */ 
         body { 
             text-align: center; 
-        } 
-          
+        }          
         /* Styling h1 tag */ 
         h1 { 
             color: green; 
             text-align: center; 
         } 
-          
         /* Styling modal */ 
         .modal:before { 
             content: ''; 
@@ -70,12 +56,10 @@ mark {
             height: 100%; 
             vertical-align: middle; 
         } 
-          
         .modal-dialog { 
             display: inline-block; 
             vertical-align: middle; 
         } 
-          
         .modal .modal-content { 
             padding: 20px 20px 20px 20px; 
             -webkit-animation-name: modal-animation; 
@@ -83,7 +67,6 @@ mark {
             animation-name: modal-animation; 
             animation-duration: 0.5s; 
         } 
-          
         @-webkit-keyframes modal-animation { 
             from { 
                 top: -100px; 
@@ -94,7 +77,6 @@ mark {
                 opacity: 1; 
             } 
         } 
-          
         @keyframes modal-animation { 
             from { 
                 top: -100px; 
@@ -115,11 +97,8 @@ mark {
     </style>
 </head>
 <body>
-
 <div class="super_container ">
-
 	<!-- Header -->
-
    <?php include'blueinclude/Header.php';?>
    <br>
    <br>
@@ -131,17 +110,14 @@ mark {
    <hr class="p-2 ">
    <div class="wrapper">
     <div class="container">
-
         <div class="wraper">
             <div class="row">
                 <div class="col-md-4"><br/>
                 <div class="bg-picture text-center">
                         <div class="bg-picture-overlay"></div>
                         <div class="profile-info-name">
-                        <h3 class="text-dark">Welcome <?php echo strtoupper($row['fname']." ".$row['lname']); ?></h3>
-                            
+                        <h3 class="text-dark">Welcome <?php echo strtoupper($row['fname']." ".$row['lname']); ?></h3>                            
                             <img src="images/user/<?php echo $row['id']; ?>/<?php echo $row['image']; ?>" class="thumb-sm img-circle img-responsive img-thumbnail w-100" alt="profile-image">
-                            
                         </div>
                     </div><br/><br/>
                     <!--/ meta -->
@@ -150,7 +126,6 @@ mark {
                 <div class="row user-tabs">
                      <label class="col-sm-12 bg-white text-danger"><?php echo $request; ?></label>
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                   
                     <ul class="nav nav-tabs tabs" style="width: 100%;">
                         <li class="active tab" style="width: 30%;">
                             <a href="#home" data-toggle="tab" aria-expanded="false" class="active">
@@ -164,8 +139,6 @@ mark {
                                 <span class="hidden-xs">Properties</span>
                             </a>
                         </li>
-                        
-                        
                         <li class="tab" style="width: 30%;">
                             <a href="#settings" data-toggle="tab" aria-expanded="false">
                                 <span class="visible-xs"><i class="fa fa-cog"></i></span>
@@ -173,12 +146,10 @@ mark {
                             </a>
                         </li>
                         <div class="indicator" style="right: 0px; left: 0px;"></div>
-                        
                     </ul>
                 </div>
                 <div class="row">
                 <div class="col-lg-12 ml-3 mr-3">
-
                     <div class="tab-content profile-tab-content">
                         <div class="tab-pane active" id="home">
                             <div class="row">
@@ -217,14 +188,8 @@ mark {
                                         </div>
                                     </div>
                                     <!-- Personal-Information -->
-
-                                    
-
                                 </div>
-
                                 <div class="col-sm-5">
-                                
-                                
                                 <div class="panel panel-default panel-fill">
                                         <div class="panel-heading">
                                             <h3 class="panel-title">About Me</h3>
@@ -232,22 +197,12 @@ mark {
                                         <div class="panel-body">
                                         <?php echo $row['AboutMe']; ?>
                                         </div>
-                                    </div>
-                                
-                                
-                                
-                                
+                                    </div>                                
                                     <!-- Personal-Information -->
                                     <!-- Personal-Information -->
-
-                                    
-
                                 </div>
-
                             </div>
                         </div>
-
-
                         <!-- Properties-Information -->
                         <?php if($row['type']=='seller'){
                             $propertytab='<div class="tab-pane" id="properties">
@@ -262,13 +217,11 @@ mark {
                                                     <th>#</th>
                                                     <th>Property Title</th>
                                                     <th>Date</th>
-                                                    
                                                 </tr>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Moltran Admin</td>
                                                     <td>07/05/2015</td>
-                                                    
                                                 </tr>  
                                         </table>
                                     </div>
@@ -278,7 +231,6 @@ mark {
                                 </div>
                             </div>
                         </div>';
-                        
                         }else{
                             $propertytab='<div class="tab-pane" id="properties">
                             <div class="panel panel-default panel-fill">
@@ -295,21 +247,12 @@ mark {
                                        </form>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>';
-                         
-                        
-                        } 
-                        
-                        echo $propertytab;
-                        
-                        
+                        }                         
+                        echo $propertytab;                       
                         ?>
-                        
                         <!-- Properties-Information -->
-                       
-
                         <div class="tab-pane" id="settings">
                             <!-- Personal-Information -->
                             <div class="row">
@@ -338,14 +281,11 @@ mark {
                                         </div>
                                         <button class="btn btn-primary waves-effect waves-light w-md" type="submit" name="EditProfile" >Save</button>
                                     </form>
-
                                 </div>
                             </div>
                             <!-- Personal-Information -->
                             </div>
                             <div class="col-sm-6">
-                            
-                            
                             <!-- Update Profile Picture -->
                                     <div class="panel panel-default panel-fill">
                                         <div class="panel-heading">
@@ -381,17 +321,9 @@ mark {
                                                                </div>
                                                               </div>
                                                         </div>
-                                            
-                                            
-                                            
-                                            
                                           </div>
                                     </div>
                                     <!-- Update Profile Picture -->
-                            
-                            
-                            
-                            
                             <!-- Personal-Information -->
                             <div class="panel panel-default panel-fill">
                                 <div class="panel-heading">
@@ -413,7 +345,6 @@ mark {
                                         <button class="btn btn-primary waves-effect waves-light w-md" type="submit" name="ChangePassword">Change Password</button>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                             <!-- Personal-Information -->
@@ -424,29 +355,17 @@ mark {
                     </div>
                 </div>
             </div>
-                
-            </div>
-                    
+            </div>  
                 </div>
-                
             </div>
-            
-            
-
-          
             <!-- End Footer -->
         </div>
         <!-- end container -->
     </div>
     <!-- end wrapper -->
-</div>
-
-            
-            
-            
+</div> 
    <?php require_once('blueinclude/Footer.php') ?>
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
