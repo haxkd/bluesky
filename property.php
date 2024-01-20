@@ -1,5 +1,4 @@
 <?php include 'blueinclude/conn.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +17,10 @@
 <link rel="stylesheet" type="text/css" href="styles/property_responsive.css">
 </head>
 <body>
-
 <div class="super_container">
-
 	<!-- Header -->
 	<?php include_once('blueinclude/Header.php') ?>
-	
 	<!-- Home -->
-
 	<div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/properties.jpg" data-speed="0.8"></div>
 		<div class="home_container">
@@ -46,13 +41,8 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Home Search -->
-        
 	<?php include'blueinclude/searchbar.php';?>
-
-
-
                     <?php
                     if (isset($_GET['Post_id'])) {
                      $id = $_GET['Post_id'];
@@ -72,18 +62,11 @@
                         }
                         $sql = "SELECT * FROM `properties` WHERE `id`='$id'";
                         $result = $conn->query($sql);
-
                    if ($result->num_rows > 0) {
                   // output data of each row
                   while($row = $result->fetch_assoc()) {
                          ?>
-
-
-
-
-
 	<!-- Intro -->
-
 	<div class="intro">
 		<div class="container">
 			<div class="row">
@@ -110,7 +93,6 @@
 			</div>
 		</div>
 		<div class="intro_slider_container">
-
 			<!-- Intro Slider -->
 			<div class="owl-carousel owl-theme intro_slider">
 				<!-- Slide -->
@@ -120,7 +102,6 @@
 				<!-- Slide -->
 				<div class="owl-item"><img src="images/properties/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['image3']);?>" alt="<?php echo $row['title'];?>"></div>
 			</div>
-
 			<!-- Intro Slider Nav -->
 			<div class="intro_slider_nav_container">
 				<div class="container">
@@ -136,15 +117,11 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Property -->
-
 	<div class="property">
 		<div class="container">
 			<div class="row">
-				
 				<!-- Sidebar -->
-
 				<div class="col-lg-4">
 					<div class="sidebar">
 						<div class="sidebar_search">
@@ -194,7 +171,6 @@
 											<input type="text" class="sidebar_search_input" placeholder="Bathrooms No">
 										</div>
 									</div>
-
 									<!-- Filter Price -->
 									<div class="price_filter">
 										<div class="price_filter_values d-flex flex-row align-items-center justfy-content-start">
@@ -203,7 +179,6 @@
 										</div>
 										<input type="range" min="0" max="1000" step="10" value="250" data-rangeslider="" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;">
 									</div>
-
 									<!-- Filter Area -->
 									<div class="area_filter">
 										<div class="price_filter_values d-flex flex-row align-items-center justfy-content-start">
@@ -216,7 +191,6 @@
 								</form>
 							</div>
 						</div>
-
 						<!-- Realtor -->
 						<div class="sidebar_realtor">
 							<div class="sidebar_realtor_image"><img src="images/sidebar_realtor.jpg" alt=""></div>
@@ -229,7 +203,6 @@
 						</div>
 					</div>
 				</div>
-				
 				<!-- Property Content -->
 				<div class="col-lg-7 offset-lg-1">
 					<div class="property_content">
@@ -239,7 +212,6 @@
 								<p><?php echo $row['shortDetail'];?></p>
 							</div>
 							<div class="property_rooms d-flex flex-sm-row flex-column align-items-start justify-content-start">
-
 								<!-- Property Room Item -->
 								<div class="property_room">
 									<div class="property_room_title">Bedrooms</div>
@@ -248,7 +220,6 @@
 										<div class="room_num"><?php echo $row['bedroom'];?></div>
 									</div>
 								</div>
-
 								<!-- Property Room Item -->
 								<div class="property_room">
 									<div class="property_room_title">Bathrooms</div>
@@ -257,7 +228,6 @@
 										<div class="room_num"><?php echo $row['bathroom'];?></div>
 									</div>
 								</div>
-
 								<!-- Property Room Item -->
 								<div class="property_room">
 									<div class="property_room_title">Area</div>
@@ -266,7 +236,6 @@
 										<div class="room_num"><?php echo $row['length'];?> Sq Ft</div>
 									</div>
 								</div>
-
 								<!-- Property Room Item -->
 								<div class="property_room">
 									<div class="property_room_title">Patio</div>
@@ -275,7 +244,6 @@
 										<div class="room_num"><?php echo $row['patio'];?></div>
 									</div>
 								</div>
-
 								<!-- Property Room Item -->
 								<div class="property_room">
 									<div class="property_room_title">Garage</div>
@@ -284,21 +252,16 @@
 										<div class="room_num"><?php echo $row['garage'];?></div>
 									</div>
 								</div>
-
 							</div>
 						</div>
-
 						<!-- Description -->
-
 						<div class="property_description">
 							<div class="property_title">Description</div>
 							<div class="property_text property_text_2">
 								<p> <?php echo $row['full'];?> </p>
 							</div>
 						</div>
-
 						<!-- Additional Details -->
-
 						<div class="additional_details">
 							<div class="property_title">Additional Details</div>
 							<div class="details_container">
@@ -311,20 +274,16 @@
 								</ul>
 							</div>
 						</div>
-
 						<!-- Property On Map -->
-
 						<div class="property_map">
 							<div class="property_title">Property on map</div>
 							<div class="property_map_container">
-
 								<!-- Google Map -->
 								<div id="google_map" class="google_map">
 									<div class="map_container">
 										<div id="map"></div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -332,20 +291,11 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
   <?php
           }
           }
- 
-        
 ?>
-
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -367,12 +317,9 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
-
 	<?php include_once('blueinclude/Footer.php') ?>
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
