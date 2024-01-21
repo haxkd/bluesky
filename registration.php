@@ -32,8 +32,6 @@ if(isset($_SESSION['email'])){
     document.getElementById('message').innerHTML = 'not matching';
   }
 }
-
-
 function showPass() {
   var x = document.getElementById("confirm_password");
   if (x.type === "password") {
@@ -46,31 +44,24 @@ function showPass() {
 </head>
 <body>
     <div class="super_container">
-
     <!-- Header -->
     <?php include_once('blueinclude/Header.php') ?>
     <!-- Menu -->
-   
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-
         <div class="container">
             <div class="col-sm-12">
                 <center><h2>Registration</h2></center>
-
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
                         <form class="form-horizontal" role="form" method="post" action="user_reg.php">
-
-
-
                             <div class="form-group">
                                 <label for="firstName" class=" control-label  ">First Name * --:- <span>&#8628;</span></label>
                                 <div class="contact_name_col">
@@ -89,7 +80,6 @@ function showPass() {
                                     <input type="email" id="email" placeholder="Email" class="form-control" name="email" required>
                                 </div>
                             </div>
-                            
                             <div class="form-group">
                                 <label for="birthDate" class=" control-label ">Date of Birth* --:- <span>&#8628;</span></label>
                                 <div class="">
@@ -105,7 +95,6 @@ function showPass() {
                                         <?php  
                                         $fe_cuntry="SELECT * FROM `country` ORDER BY `country`.`name` ASC";
                                         $result = $conn->query($fe_cuntry);
-
                                         if ($result->num_rows > 0) {
                                           // output data of each row
                                         while($row = $result->fetch_assoc()) {
@@ -114,20 +103,15 @@ function showPass() {
                                                 }else{
                                                 $selected="";
                                                 }
-                                        
                                         echo '<option value="'.$row["name"].'" '.$selected.'>'.$row["name"].'</option>';
-                                        
                                         }
                                         }
-                                        
                                 ?>
-                                
                                     </select>
                                 </div>
                              </div>   
                             <div class="form-group">
                                 <label for="phoneNumber" class=" control-label">Phone number* --:- <span>&#8628;</span> </label>
-                               
                                 <div class="">
                                 <input class="form-control" id="mobile" type="tel" placeholder="+910123456789" pattern="[+]{1}[0-9]{11,14}" name="mo_num" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "13" required />
                                     <span class="help-block">Your phone number won't be disclosed anywhere </span>
@@ -139,10 +123,7 @@ function showPass() {
                                     <input type="text" class="form-control col-sm-8" id="location" placeholder="Address" name="location" required>
                                     <input class="form-control col-sm-4" id="location" placeholder="Pin code" name="pinnumber"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "6" required />
                                 </div>
-                                
-                                
                             </div>
-
                             <div class="form-group">
                                 <label class="control-label">Gender* --:- <span>&#8628;</span> </label>
                                 <div class="col-sm-6">
@@ -167,7 +148,6 @@ function showPass() {
                                 </div>
                             </div>
                             <div class="form-group">
-                                
                                 <label class="control-label" for="confirm_password">Confirm Password *--:-<span>&#8628;</span></label>
                                 <div class="">
                                     <input type="password" class="form-control" id="confirm_password" placeholder="Re Enter password" name="confirm_password" onkeyup='check();' required/>
@@ -181,9 +161,7 @@ function showPass() {
                                 </div>
                             </div>
                             <button  ID="submit"  class="contact_button button" name="register">Register</button>
-
                         </form>
-
                         <!-- /form -->
                     </div>
                     <div class="col-sm-3"></div>
@@ -195,10 +173,7 @@ function showPass() {
         <br />
         <div>
             <?php require_once('blueinclude/Footer.php') ?>
-        </div>
-    
-   
-
+        </div>  
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
