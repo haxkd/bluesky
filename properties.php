@@ -41,8 +41,6 @@
 	</div>
 	<?php include'blueinclude/searchbar.php';?>
 	<!-- Properties -->
-
-
 <?php
 if(isset($_GET['page']))
 {
@@ -61,8 +59,6 @@ $per_page=6;
 $no_of_page=ceil($count/$per_page);
 $start=($page-1)*$per_page;
 ?>
-
-
 	<div class="properties">
 		<div class="container">
 			<div class="row">
@@ -100,10 +96,7 @@ $start=($page-1)*$per_page;
 					</div>
 				</div>
                                  <?php } } ?>
-
 				<!-- Property -->
-				
-
 			</div>
 			<div class="row">
 				<div class="col">
@@ -125,9 +118,7 @@ $start=($page-1)*$per_page;
 			</div>
 		</div>
 	</div>
-
 	<!-- Newsletter -->
-
 	<div class="newsletter">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
 		<div class="container">
@@ -149,12 +140,9 @@ $start=($page-1)*$per_page;
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->
 	<?php include_once('blueinclude/Footer.php') ?>
-
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
