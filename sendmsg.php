@@ -6,7 +6,6 @@ if(isset($_POST['send']))
     $email=$_POST['email'];
     $mobile=$_POST['mobile'];
     $message=$_POST['message'];
-    
     $ins_sql="INSERT INTO `feedback` (`name`, `email`, `mobile`, `message`) 
         VALUES ('".$name."', '".$email."', '".$mobile."', '".$message."')";
     if ($conn->query($ins_sql) === TRUE) {
@@ -15,7 +14,6 @@ if(isset($_POST['send']))
     else 
     {
         header('Location: index.php?msg=Feedback send Failed...!!!!!');
-        
     }
 }
 ?>
