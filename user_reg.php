@@ -9,25 +9,12 @@
         $result=strtolower($userid);
          $fe_email="SELECT * FROM `user_tb` WHERE `email`='".$_POST['email']."'";
                                         $result2 = $conn->query($fe_email);
-
                                         if ($result2->num_rows > 0) {
-                                        
                                                                  header("location:registration.php?Error= Email allredy registerd --- <a href ='login.php'>login Here</a>");                            
-                                                                 
                                                                  }
-                                        
-                                        
-                                       else{
+                                            else{
                                          $email= strip_tags($_POST['email']);
                                         }
-                                        
-         
-                                        
-                                        
-                                        
-
-       
-        
         $dob1=date('d-m-Y', strtotime($_POST['birthday']));
         //$dateOfBirth = $_POST['birthday'];
         //$today = date("Y-m-d");
@@ -41,7 +28,6 @@
         $pin=$_POST['pinnumber'];
         $image="about.jpg";
         $enc_pass = md5($pass);
-        
         $ins_sql="INSERT INTO `user_tb` (`fname`, `lname`, `user_name`, `email`, `gender`,`mobile`, `dob`, `country`, `address`, `pincode`, `password`, `image`) 
         VALUES ('".$fname."', '".$lname."', '".$result."', '".$email."', '".$gender."','".$mo_num."', '".$dob1."', '".$country."', '".$address."', '".$pin."', '".$enc_pass."', '".$image."')";
        if ($conn->query($ins_sql) === TRUE) {
@@ -52,11 +38,9 @@
                         $row1 = mysqli_fetch_assoc($result1);
                         $start=1000;
                         $userid1= $row1['user_name'].($start + $row1['id']);
-                       
                         //$start + number_format($row['id']);
                         $sql1 = "UPDATE `user_tb` SET `user_name` = '".$userid1."' WHERE `id` =".$row1['id']." ";
-                        mysqli_query($conn, $sql1);
-                        
+                        mysqli_query($conn, $sql1);                        
                          $uid=$row1['id'];
                          $dir="images/user/$uid";
                           if(!is_dir($dir)){
@@ -65,11 +49,8 @@
                         $imagePath = "images/about.jpg";
                         $newPath = "images/user/".$uid."/about.jpg";
                         copy($imagePath , $newPath);
-
                         header("location:login.php?Regi= Account Created  sucsses fully ");
-                        
                         }
-                          
           } else {
             echo "Error: " . $ins_sql . "<br>" . $conn->error;
             //$timezone = date_default_timezone_get();
@@ -80,16 +61,6 @@
 //echo $ip1;
 //$ip3 = isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
 //echo $ip3;
-
-
-
 } 
-
 }
-
-
-
-
-
-
 ?>
