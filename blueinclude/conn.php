@@ -6,7 +6,6 @@ $db_name ="bluesky";
 $conn = new mysqli($servername,$user,$pass,$db_name);
 if($conn->connect_error){
     die("connection failed: " . $conn->connect_error);
-    echo "server connected";
-    
+    echo "server connected";   
 }
 ?>
