@@ -40,11 +40,9 @@ session_start();
          $user_header_btn2='<li class="menu_item"><a href="registration.php">SignUp <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
                            <li class="menu_item"><a href="login.php">LogIn <i class="fa fa-sign-in" aria-hidden="true"></i> </a></li>';
         }
-
 ?>﻿
 <header class="header px-3">
     <div class="container-flude ">
-    
         <div class="row">
             <div class="col">
                 <div class="header_content d-flex flex-row align-items-center justify-content-center">
@@ -73,9 +71,7 @@ session_start();
         </div>
     </div>
 </header>
-
 <!-- Menu -->
-
     <div class="menu trans_500">
         <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
             <div class="menu_close_container"><div class="menu_close"></div></div>
@@ -92,8 +88,7 @@ session_start();
                             <li class="menu_item"><a href="properties.php">Properties</a></li>
                             <li class="menu_item"><a href="news.php">News</a></li>
                             <li class="menu_item"><a href="contact.php">Contact</a></li>
-                            <?php echo $user_header_btn2; ?>
-                            
+                            <?php echo $user_header_btn2; ?>                            
             </ul>
         </div>
         <div class="menu_phone"><span>call us: </span>+91 7007420572</div>
