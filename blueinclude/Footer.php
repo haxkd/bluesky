@@ -1,4 +1,3 @@
-﻿
 <footer class="footer">
 		<div class="footer_main">
 			<div class="container">
@@ -55,7 +54,6 @@
 				<div class="row">
 					<div class="col">
 						<div class="footer_bar_content d-flex flex-row align-items-center justify-content-start">
-							
 							<div class="footer_nav">
 								<ul>
 									<li><a href="index.php">Home</a></li>
