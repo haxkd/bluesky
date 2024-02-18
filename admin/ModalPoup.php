@@ -1,6 +1,4 @@
-﻿
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Singup  Form</title>
@@ -52,7 +50,6 @@
                 <div>
                 </div>
             </div>
-
             <div class="col s12">
                 <div class="col s4"></div>
                 <div class="input-field col s4">
@@ -63,7 +60,6 @@
                 <div>
                 </div>
             </div>
-
             <div class="col s12">
                 <div class="col s4"></div>
                 <div class="input-field col s4">
@@ -84,7 +80,6 @@
                 <div>
                 </div>
             </div>
-
             <div class="col s12">
                 <div class="col s4"></div>
                 <div class="input-field col s4">
@@ -95,7 +90,6 @@
                 <div>
                 </div>
             </div>
-
             <div class="col s12">
                 <div class="col s4"></div>
                 <div class="input-field col s4">
@@ -119,8 +113,7 @@
         </div>
     </form>
         </div>
-        
-      </div>
+        </div>
     </div>
   </div>
 </div>
