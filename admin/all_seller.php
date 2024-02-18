@@ -1,5 +1,4 @@
 ﻿<?php include 'conn.php';?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,20 +15,13 @@
     <?php include 'js.php'; ?>
     </div>
     <div class="container">
-
       <div class="jumbotron">
             <center>
                 <h2>Seller main Table</h2>
             </center>
         <div class="row">
-            
         </div>
-           
-
         </div>
-        
-        
-
         <table class="table table-striped">
             <thead>
                 <th>ID</th>
@@ -40,8 +32,6 @@
                 <th>Country</th>
                 <th><span style="color: blue;">Show detail</span></th>
                 <th></th>
-                
-              
             </thead>
             <tbody>
             <?php
@@ -55,13 +45,8 @@
                         <td>'.$rows['user_name'].'</td> 
                         <td>'.$rows['gender'].'</td>
                         <td>'.$rows['pincode'].'</td>
-                        
                         <td>'.$rows['country'].'</td>
-                        
-                        
-
                         <td><a class="btn btn-primary" href="user_detail.php?detail_id='.$rows['id'].'&p=all_seller">Access</a></td>
-                        
                     </tr>
                     ';
                 }
@@ -70,6 +55,4 @@
         </table>
         </div>
      </body>
-
 </html>
-
