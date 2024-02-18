@@ -1,5 +1,4 @@
 ﻿<?php include 'conn.php';?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,7 +15,6 @@
     <?php include 'js.php'; ?>
     </div>
     <div class="container">
-
       <div class="jumbotron">
             <center>
                 <h2>Users main Table</h2>
@@ -25,12 +23,7 @@
             <div class="col-sm-6"><center><button id="myBtn"><a href="trash_table.php" style="color: black">Go to Trash</a></button></div>
             <div class="col-sm-6"><center><button id="myBtn"><a href="selected.php" style="color: black">Go to Selected</a></button></div>
         </div>
-           
-
         </div>
-        
-        
-
         <table class="table table-striped">
             <thead>
                 <th>ID</th>
@@ -41,8 +34,6 @@
                 <th>Country</th>
                 <th><span style="color: blue;">Show detail</span></th>
                 <th></th>
-                
-              
             </thead>
             <tbody>
             <?php
@@ -56,11 +47,7 @@
                         <td>'.$rows['user_name'].'</td> 
                         <td>'.$rows['gender'].'</td>
                         <td>'.$rows['pincode'].'</td>
-                        
                         <td>'.$rows['country'].'</td>
-                        
-                        
-
                         <td><a class="btn btn-primary" href="user_detail.php?detail_id='.$rows['id'].'&p=all_user">Access</a></td>
                         
                     </tr>
@@ -71,6 +58,4 @@
         </table>
         </div>
      </body>
-
 </html>
-
