@@ -1,3 +1,3 @@
 <?php
-include '../blueinclude/conn.php';
+  include '../blueinclude/conn.php';
 ?>
