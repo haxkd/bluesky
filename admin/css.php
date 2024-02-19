@@ -22,5 +22,4 @@ if(!isset($_SESSION['admin'])){
   background-color: green;
   color: black;
 }
-
 </style>
