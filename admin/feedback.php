@@ -1,25 +1,9 @@
 <?php include 'conn.php';?>
-
 <?php
-
 if(isset($_GET['delete'])  && isset($_GET['c']) ){
-    
-    $id = $_GET['delete'];
-    
+    $id = $_GET['delete'];   
 }
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -36,7 +20,6 @@ if(isset($_GET['delete'])  && isset($_GET['c']) ){
     <?php include 'js.php'; ?>
     </div>
     <div class="container">
-
       <div class="jumbotron">
             <center>
                 <h2>Users main Table</h2>
@@ -45,12 +28,7 @@ if(isset($_GET['delete'])  && isset($_GET['c']) ){
             <div class="col-sm-6"><center><button id="myBtn"><a href="index.php" style="color: black">Go to Home</a></button></div>
             <div class="col-sm-6"><center><button id="myBtn"><a href="index.php" style="color: black">Go to Home</a></button></div>
         </div>
-           
-
         </div>
-        
-        
-
         <table class="table table-striped">
             <thead>
                 <th>ID</th>
@@ -60,8 +38,6 @@ if(isset($_GET['delete'])  && isset($_GET['c']) ){
                 <th>MESSAGE</th>
                 <th><span style="color: blue;">Delete Feedback</span></th>
                 <th></th>
-                
-              
             </thead>
             <tbody>
             <?php
@@ -75,9 +51,7 @@ if(isset($_GET['delete'])  && isset($_GET['c']) ){
                         <td>'.$rows['email'].'</td> 
                         <td>'.$rows['mobile'].'</td>
                         <td>'.$rows['message'].'</td>
-                        
                         <td><a class="btn btn-primary" href="?delete='.$rows['id'].'&c=yes">DELETE</a></td>
-                        
                     </tr>
                     ';
                 }
@@ -86,5 +60,4 @@ if(isset($_GET['delete'])  && isset($_GET['c']) ){
         </table>
         </div>
      </body>
-
 </html>
