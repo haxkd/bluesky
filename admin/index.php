@@ -5,22 +5,13 @@
         if ($conn->query($sql3) === TRUE) {
             $del_sql="DELETE FROM request_seller WHERE user_id='$user_id1'";
             $run2= mysqli_query($conn,$del_sql);
-            
-        }
-        
+        }        
     }else if(isset($_POST['delete'])){
         $user_id1=$_POST['user_id'];
-        
             $del_sql="DELETE FROM request_seller WHERE user_id='$user_id1'";
             $run2= mysqli_query($conn,$del_sql);
-            
-        }
-        
-   
-
-
+        }   
 ?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -39,8 +30,7 @@
 .container .details p{
     font-size:15px;
     font-weight:bold;
-}
-        
+}   
     </style>
 </head>
 <body>
@@ -74,10 +64,6 @@
             <center>
                 <h2>Requested for Seller account</h2>
             </center>
-        
-        
-        
-
         <table class="table table-striped">
             <thead>
                 <th>ID</th>
@@ -89,9 +75,7 @@
                 <th>About_Exp</th>
                 <th><span style="color: blue;">Show_detail</span></th>
                 <th><span style="color: green;">Approve</span></th>
-                <th><span style="color: red;">Decline</span></th>
-                
-              
+                <th><span style="color: red;">Decline</span></th>              
             </thead>
             <tbody>
             <?php
@@ -108,12 +92,8 @@
                                 <td>'.$rows['user_name'].'</td> 
                                 <td>'.$rows['gender'].'</td>
                                 <td>'.$rows['pincode'].'</td>
-                                
                                 <td>'.$rows['country'].'</td>
                                 <td>'.$rows1['about_exp'].'</td>
-                                
-                                
-        
                                 <td><a class="btn btn-primary" href="user_detail.php?detail_id='.$rows['id'].'&p=home">Access</a></td>
                                 <td>
                                     <form method="POST" action="">
@@ -126,8 +106,7 @@
                                         <input type="hidden"  name="user_id" value="'.$rows['id'].'">
                                         <input type="submit" name="delete" value="Dicline" class="btn btn-danger">
                                     </form>
-                                </td>
-                                
+                                </td>                                
                             </tr>
                             ';
                         }
@@ -136,7 +115,5 @@
             </tbody>
         </table>
         </div>
-        
      </body>
-
 </html>
