@@ -1,5 +1,4 @@
 ﻿<?php include 'conn.php';?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -16,16 +15,12 @@
     <?php include 'js.php'; ?>
     </div>
     <div class="container">
-
       <div class="jumbotron">
             <center>
                 <h2>Property main Table</h2>
                 <p>l=length,b=bedroom,b=bathroom,p=patio,g=garage</p>
             </center>
       </div>
-        
-        
-
         <table class="table table-striped">
             <thead>
                 <th>ID</th>
@@ -38,12 +33,9 @@
                 <th>location</th>
                 <th>shortDetail</th>
                 <th>fullDetail</th>
-                
                 <th><span style="color: blue;">status</span></th>
                 <th>
 </th>
-                
-              
             </thead>
             <tbody>
             <?php
