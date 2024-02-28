@@ -9,8 +9,7 @@
    <div>
     <?php include 'side.php'; ?>
     <form id="form1">
-        <div>
-        </div>
+        <div></div>
     </form>
     <?php include 'js.php'; ?>
     </div>
