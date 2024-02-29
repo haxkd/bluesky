@@ -25,7 +25,6 @@
                 <th>Country</th>
                 <th>Comments</th>
             </thead>
-            
            
             <tbody>
            
