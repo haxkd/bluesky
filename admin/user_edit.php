@@ -1,6 +1,6 @@
 ﻿<?php include 'conn.php';?>
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <title></title>
     <?php include 'css.php'; ?>
@@ -25,7 +25,6 @@
                 <th>Country</th>
                 <th>Comments</th>
             </thead>
-           
             <tbody>
            
             <?php
