@@ -52,7 +52,6 @@
                         <td><center><button id="myBtn"><a href="edit.php?trash_id='.$rows['id'].'" style="color: brown">Send to trash</a></button></center> </td>
                         <td></td>
                         <td><center><button id="myBtn"><a href="edit.php?copy_id='.$rows['id'].'" style="color: black">Copy to selected </a></button></center> </td>
-                        
                     </tr>
                     
                     ';
