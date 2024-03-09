@@ -25,8 +25,7 @@
                 <th>Country</th>
                 <th>Comments</th>
             </thead>
-            <tbody>
-           
+            <tbody>           
             <?php
                 if(isset($_GET['edit_id'])){
                     $edit=$_GET['edit_id'];
