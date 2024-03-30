@@ -61,7 +61,6 @@
         <?php                
             echo '<center><button id="myBtn"><a href="data_display.php" style="color: black">Return</a></button></center>';
             ?>
-                
         </div>
 
       
